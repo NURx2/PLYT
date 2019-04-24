@@ -1,20 +1,22 @@
 import React from 'react';
-import { playlists } from '../data/playlists'
-import addNewPlaylistItem from '../components/addNewPlaylistItem'
+import playlists from '../data/playlistsData'
+// import addNewPlaylistItem from '../components/addNewPlaylistItem'
 
-export default () => (
-  <div>
+export default () => {
+  console.log(playlists)
+  
+  return <div>
     <ul>
       {
         playlists.map(pl => (
-          <li key={pl.state.dateOfBirth}>
+          <li key={pl.dateOfBirth}>
            { pl }
           </li>
         ))
       }
-      <li>
+      {/* <li>
         { addNewPlaylistItem }
-      </li>
+      </li> */}
     </ul>
   </div>
-);
+};
