@@ -10,20 +10,14 @@ class PlaylistPage extends Component {
     this.state = {
       playlistId : props.match.params.playlistId,
       videos : [], 
-      pickedVideo : {},
+      indPickedVideo : 0,
     }
 
     this.state.videos = JSON.parse(
       localStorage.getItem(
         `pl[${this.state.playlistId}]`
       )
-    ).videos.slice(1)
-
-    this.state.pickedVideo = JSON.parse(
-      localStorage.getItem(
-        `pl[${this.state.playlistId}]`
-      )
-    ).videos[0]
+    ).videos
   }
 
   render() {
@@ -33,19 +27,19 @@ class PlaylistPage extends Component {
         <iframe 
           className={styles.iframe}
           frameborder="2"
-          src={`https://www.youtube.com/embed/${this.state.pickedVideo.id}`} //не нулевый, а текущий выбранный (для перерендера)
+          src={`https://www.youtube.com/embed/${this.state.videos[this.state.indPickedVideo].id}`}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen 
         />
+        </div>
         <div className={styles.containerList}>
-          <ul>
+          <ul className={styles.list}>
             {this.state.videos.map(current => (
-              <li>
+              <li key={current.id}>
                 <VideoItem {...current}/>
               </li>
             ))}
           </ul>
-        </div>
         </div>
       </div>
     );
