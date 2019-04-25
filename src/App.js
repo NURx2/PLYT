@@ -1,20 +1,43 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 // import mainPage from './pages/mainPage'
-import playlistPage from './pages/playlistPage'
+import PlaylistOrNotFoundPage from './pages/playlistOrNotFoundPage'
+import PlaylistPage from './pages/playlistPage'
+import NotFoundPage from './pages/notFoundPage'
 import './App.module.css';
 
 class App extends Component {
+  componentDidMount() {
+    // console.log(PlaylistPage)
+  }
+  
   render() {
     return (
       <Router>
         <div className="App">
-          <Route 
-            exact path = "/"
-            component={() => <Link to="/playlist/1">Добрый вечер</Link>}
-          />
-          {/* <Route exact path="/" component={mainPage} /> */}
-          <Route path="/playlist/:playlistId" component={playlistPage} />
+          <Switch>
+            <Route 
+              exact path = "/"
+              component={() => (
+                <div>
+                  <Link to="/playlist/0">Добрый вечер</Link>
+                  <br />
+                  <button 
+                    onClick={() => {
+                      localStorage.clear();
+                    }}>
+                    Очистить localStorage
+                  </button>
+                </div>
+              )}
+            />
+            {/* <Route exact path="/" component={mainPage} /> */}
+            <Route 
+              path="/playlist/:playlistId"
+              component={PlaylistOrNotFoundPage} 
+            />
+            <Route path="*" component={NotFoundPage} />
+          </Switch>
         </div>
       </Router>
     );

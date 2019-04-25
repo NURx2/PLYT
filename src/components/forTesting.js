@@ -1,5 +1,9 @@
 import React, {Fragment, Component} from 'react'
 
+function getTitle(id) {
+  return `https://noembed.com/embed?url=https://www.youtube.com/watch?v=${id}`
+}
+
 class Child extends Component {
   constructor(props) {
     super(props)

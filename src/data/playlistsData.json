@@ -2,7 +2,27 @@
   {
     "title" : "My first pl",
     "preview" : "",
-    "dateOfBirth" : ""
+    "dateOfBirth" : "",
+    "videos" : [
+      {
+        "id" : "KYniUCGPGLs",
+        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
+        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/hqdefault.jpg",
+        "addingDate" : "1556109441220"
+      },
+      {
+        "id" : "KYniUCGPGLs",
+        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
+        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/hqdefault.jpg",
+        "addingDate" : "1556109441220"
+      },
+      {
+        "id" : "KYniUCGPGLs",
+        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
+        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/hqdefault.jpg",
+        "addingDate" : "1556109441220"
+      }
+    ]
   },
   {
     "title" : "Cats",
