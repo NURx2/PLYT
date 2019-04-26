@@ -5,34 +5,16 @@
     "dateOfBirth" : "",
     "videos" : [
       {
+        "addingDate" : "1556109441220",
         "id" : "KYniUCGPGLs",
-        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
         "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/mqdefault.jpg",
-        "addingDate" : "1556109441220"
+        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)"
       },
       {
-        "id" : "qxWrnhZEuRU",
-        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
-        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/mqdefault.jpg",
-        "addingDate" : "1556109441220"
-      },
-      {
-        "id" : "frLydE1UCvA",
-        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
-        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/mqdefault.jpg",
-        "addingDate" : "1556109441220"
-      },
-      {
-        "id" : "hqeSGGGS0NM",
-        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
-        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/mqdefault.jpg",
-        "addingDate" : "1556109441220"
-      },
-      {
-        "id" : "TfXeS-IlRJc",
-        "title" : "Маша и Медведь (Masha and The Bear) - Маша плюс каша (17 Серия)",
-        "preview" : "https://img.youtube.com/vi/KYniUCGPGLs/mqdefault.jpg",
-        "addingDate" : "1556109441220"
+        "addingDate": "1556276691593",
+        "id": "WPni755-Krg",
+        "preview": "https://i.ytimg.com/vi/WPni755-Krg/mqdefault.jpg",
+        "title": "Study Music Alpha Waves: Relaxing Studying Music, Brain Power, Focus Concentration Music, ☯161"
       }
     ]
   },

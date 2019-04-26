@@ -1,10 +1,31 @@
 .container {
   height: auto;
-  width: auto;
-  padding: 4px 0px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  padding: 5px 5px;
+  margin: 2px 2px;
+  outline: none;
+  cursor: pointer;
   display: flex;
-  text-decoration: none;
-  color: black; 
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.container:hover {
+  border: 2px solid #ffbe76;
+}
+
+.pickedContainer {
+  border: 2px solid #badc58;
+}
+
+.pickedContainer:hover {
+  border: 2px solid #badc58;
 }
 
 .details {

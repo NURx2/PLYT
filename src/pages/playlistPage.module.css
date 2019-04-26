@@ -12,7 +12,7 @@
 }
 
 .page {
-  background-color: #f6e58d; 
+  background-color: #eee; 
   height: 100vh;
   width: 100vw;
 }
@@ -32,7 +32,7 @@
 }
 
 .containerList {
-  overflow: auto; /*another way?*/
+  overflow: auto;
   height: calc(100vh - 290px);
   width: 512px;
   background-color: white;
@@ -41,5 +41,5 @@
 
 .list {
   list-style-type: none;
-  padding: 0 20px;
+  padding: 0 10px;
 }
